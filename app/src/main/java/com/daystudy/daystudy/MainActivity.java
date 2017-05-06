@@ -16,4 +16,13 @@ public class MainActivity extends AppCompatActivity {
     private void feature_1(){
         Toast.makeText(this, "feature-1", Toast.LENGTH_SHORT).show();
     }
+
+    /**
+     * feature_2分支提交的代码
+     */
+    private void feature_2() {
+        Toast.makeText(this, "feature-2", Toast.LENGTH_SHORT).show();
+    }
+
+
 }
