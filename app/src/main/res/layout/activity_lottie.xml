@@ -17,12 +17,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="codeUse"
-        android:text="代码用法"/>
+        android:text="代码简单用法"/>
 
    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="controlUse"
         android:text="控制用法"/>
+
+
+   <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadNetUse"
+        android:text="加载网络上的文件用法"/>
+
+
 
 </LinearLayout>

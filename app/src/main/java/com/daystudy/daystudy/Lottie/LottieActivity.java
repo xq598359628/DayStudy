@@ -35,5 +35,11 @@ public class LottieActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void loadNetUse(View view) {
+        Intent intent = new Intent(this, Lottie2Activity.class);
+        intent.putExtra("useway", 3);
+        startActivity(intent);
+    }
+
 
 }

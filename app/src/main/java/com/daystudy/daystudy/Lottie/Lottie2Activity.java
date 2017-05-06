@@ -1,6 +1,7 @@
 package com.daystudy.daystudy.Lottie;
 
 import android.animation.Animator;
+import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -78,12 +79,16 @@ public class Lottie2Activity extends AppCompatActivity {
 
                 break;
             case 3:
-
-
+                downLoad();
 
                 break;
             default:
                 break;
         }
+    }
+
+    private void downLoad() {
+        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+       // String url = ""
     }
 }
