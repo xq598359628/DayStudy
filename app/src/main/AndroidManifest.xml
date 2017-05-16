@@ -2,11 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.daystudy.daystudy">
 
-    <uses-permission android:name="android.permission.INTERNET" />;
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>;
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>;
+    <uses-permission android:name="android.permission.INTERNET"/>
 
+    <!--允许读取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!--允许读取wifi网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,16 +20,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
         </activity>
         <activity android:name=".Lottie.LottieActivity">
+        </activity>
+        <activity android:name=".Lottie.Lottie2Activity">
+        </activity>
+        <activity android:name=".day3.TimeLineActivity">
+        </activity>
+        <activity android:name=".day4.EdittextListenerActivity">
+
+        </activity>
+        <activity android:name=".day4.NetWorkStateActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".Lottie.Lottie2Activity">
         </activity>
     </application>
 

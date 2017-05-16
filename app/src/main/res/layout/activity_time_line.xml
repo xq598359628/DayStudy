@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daystudy.daystudy.day3.TimeLineActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.daystudy.daystudy.day3.TimelineLayout
+            android:id="@+id/timeline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:line_margin_left="25dp"
+            app:line_margin_top="8dp"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+        </com.daystudy.daystudy.day3.TimelineLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
