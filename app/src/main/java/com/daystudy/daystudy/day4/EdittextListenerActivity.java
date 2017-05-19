@@ -30,7 +30,6 @@ public class EdittextListenerActivity extends AppCompatActivity {
         mEt = (EditText) findViewById(R.id.et);
         mTv = (TextView) findViewById(R.id.tv);
         mTv2 = (TextView) findViewById(R.id.tv2);
-        
         mEt.addTextChangedListener(new TextWatcher() {
 
             private int mEnd;
