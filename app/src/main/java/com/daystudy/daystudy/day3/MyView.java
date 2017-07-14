@@ -22,7 +22,7 @@ import com.daystudy.daystudy.R;
  * 本质上，我们可以不声明declare-styleable仅仅声明所需的属性即可。
  * 2.我们在View的构造方法中，可以通过AttributeSet去获得自定义属性的值，但是比较麻烦，而TypedArray可以很方便的便于我们去获取。
  * 3.我们在自定义View的时候，可以使用系统已经定义的属性。
- *
+ * 4.declare-styleable的name不一定要是自定义view的名字
  */
 
 public class MyView extends LinearLayout{
@@ -54,7 +54,7 @@ public class MyView extends LinearLayout{
     }
 
     private void getMyAttrsByTypeArray(Context context,AttributeSet attrs) {
-        TypedArray array = context.obtainStyledAttributes(attrs,R.styleable.MyView);
+        TypedArray array = context.obtainStyledAttributes(attrs,R.styleable.MyTextView);
         mString = array.getString(R.styleable.MyView_android_text);
         mDrawable = array.getDrawable(R.styleable.MyView_bg);
         array.recycle();

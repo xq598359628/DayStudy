@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_common_view_layout"
+        android:layout_width="250dp"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:background="@drawable/m_community_namecard_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/community_nickname_close"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/m_community_close"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="请建立您的堂名片"
+            android:textColor="@color/m_community_white"
+            android:textSize="18sp"/>
+
+        <FrameLayout
+            android:id="@+id/community_nickname_head_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp">
+
+            <ImageView
+                android:id="@+id/community_nickname_head"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/m_community_namecard_head"/>
+
+            <ImageView
+                android:id="@+id/community_nickname_camera"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/m_community_camera"/>
+
+            <ProgressBar
+                android:id="@+id/img_loading"
+                style="@style/GuideSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/padding_medium"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/community_nickname_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/m_community_namecard_et_bg"
+            android:gravity="center"
+            android:hint="请输入堂昵称"
+            android:imeOptions="actionGo"
+            android:inputType="textPersonName"
+            android:maxLength="10"
+            android:padding="6dp"
+            android:textColorHint="@color/m_community_text_color_2"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/community_nickname_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:gravity="center"
+            android:text="头像、昵称可在个人中心修改哦~"
+            android:textColor="@color/m_community_text_color_3"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/community_nickname_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/m_community_dialog_btn_bg"
+            android:enabled="false"
+            android:minHeight="32dp"
+            android:text="下一步"
+            android:textColor="@color/m_community_white"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialog_drop_out"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/m_community_dialog_rope"/>
+</RelativeLayout>

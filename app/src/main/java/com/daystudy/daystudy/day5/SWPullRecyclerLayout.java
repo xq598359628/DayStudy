@@ -11,7 +11,6 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -143,7 +142,6 @@ public class SWPullRecyclerLayout extends LinearLayout implements NestedScrollin
         if (totalY < 0 && myRecyclerView.isOrientation(OrientationHelper.HORIZONTAL) || totalY > 0 && myRecyclerView.isOrientation(OrientationHelper.VERTICAL)) {
             isfling = true;
         }
-        Log.e("tag","dy:" + dy);
         if (IsRefresh) {
             if (dy > 0) {
                 if (myRecyclerView.isOrientation(0)) {
@@ -151,11 +149,9 @@ public class SWPullRecyclerLayout extends LinearLayout implements NestedScrollin
                     if ((totalY / 2) <= 0) {
                         scrollTo(0, totalY / 2);
                         consumed[1] = dy;
-                        Log.e("tag","totalY:" + totalY + "---totalY / 2) <= 0");
                     } else {
                         scrollTo(0, 0);
                         consumed[1] = 0;
-                        Log.e("tag","totalY / 2) >0");
                     }
                 }
                 return;

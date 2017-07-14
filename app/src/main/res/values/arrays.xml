@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_indicators">
+        <item>经济</item>
+        <item>娱乐</item>
+        <item>体育</item>
+        <item>游戏</item>
+    </string-array>
+
+    <array name="drawables">
+        <item>@drawable/gh_cm_icon_weixin</item>
+        <item>@drawable/gh_cm_icon_weixinsquare</item>
+        <item>@drawable/gh_cm_icon_patient</item>
+        <item>@drawable/gh_cm_icon_wyfriend</item>
+    </array>
+
+    <array name="beautys">
+        <item>@drawable/timg</item>
+        <item>@drawable/timg1</item>
+        <item>@drawable/timg3</item>
+        <item>@drawable/timg5</item>
+    </array>
+
+</resources>

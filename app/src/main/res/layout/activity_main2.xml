@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.daystudy.daystudy.day5.Main2Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/m_community_white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/m_community_health_me_user_praise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/m_community_post_drawable_padding"
+            android:text="@string/m_community_health_me_settting_follow_her"/>
+
+        <TextView
+            android:id="@+id/m_community_health_me_user_collection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/m_community_post_drawable_padding"
+            android:text="@string/m_community_health_me_settting_follow_her"/>
+
+        <TextView
+            android:id="@+id/m_community_health_me_user_her_follow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/m_community_post_drawable_padding"
+            android:text="@string/m_community_health_me_settting_follow_her"/>
+
+        <TextView
+            android:id="@+id/m_community_health_me_user_follow_her"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/m_community_post_drawable_padding"
+            android:text="@string/m_community_health_me_settting_follow_her"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <requestFocus/>
+    </EditText>
+</LinearLayout>

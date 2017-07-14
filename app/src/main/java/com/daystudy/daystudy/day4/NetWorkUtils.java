@@ -64,7 +64,7 @@ public class NetWorkUtils {
         if (net != null) {
             switch (net.getType()) {
                 case ConnectivityManager.TYPE_WIFI:
-                    return NetType.WIFI;
+                    return  NetType.WIFI;
                 case ConnectivityManager.TYPE_MOBILE:
                     return NetType.MOBILE;
                 default:
